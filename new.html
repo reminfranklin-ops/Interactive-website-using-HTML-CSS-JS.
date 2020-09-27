@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lucifer</title>
+	<link rel="stylesheet" type="text/css" href="SS.css">
+</head>
+<body>
+	<div class="main">
+		<nav>
+			<div class="logos">
+				<img src="lucifer1.png">
+			</div>
+			<div class="credits">
+				<h5>Website Designed by: ReminFranklin</h5>
+			</div>
+			<div class="nav-links">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Branches</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="information">
+			<div class="overlay"></div>
+			<img src="lucifer.jpg" class="IMA">
+			<div id="circle">
+				<div class="feature one">
+					<img src="White-Fox-Studios.png">
+					<div>
+						<h1>FOX STUIDOS</h1>
+						<p>Lucifer was iinitially started by fox studios.</p>
+					</div>
+				</div>
+				<div class="feature two">
+					<img src="netflix1.png">
+					<div>
+						<h1>NETFLIX</h1>
+						<p>After fox dropping out Lucifer netflix grabbed the opportunity.</p>
+					</div>
+				</div>
+				<div class="feature three">
+					<img src="88-884873_warner-bros-logo-warner-brothers-white-logo-png.png">
+					<div>
+						<h1>WB</h1>
+						<p>WB pictures hold a share in this show.</p>
+					</div>
+				</div>
+				<div class="feature four">
+					<img src="88-884765_warner-bros-records-logo-black-and-white-samsung.png">
+					<div>
+						<h1>AWARDS</h1>
+						<p>WBs accademy awards for 2019s.</p>
+					</div>
+				</div>
+				
+			</div>
+			<div class="controls">
+				<img src="arrow.png" id="up">
+				<h3>More info</h3>
+				<img src="arrow.png" id="down">
+			</div>
+			
+		</div>
+
+		<script type="text/javascript">
+			var circle = document.getElementById("circle");
+			var up = document.getElementById("up");
+			var down = document.getElementById("down");
+
+			var rotateValue = circle.style.transform;
+			var rotateSum;
+
+			up.onclick = function()
+			{
+				rotateSum = rotateValue + "rotate(-90deg)";
+				circle.style.transform = rotateSum;
+				rotateValue = rotateSum;
+			}
+
+			down.onclick = function()
+			{
+				rotateSum = rotateValue + "rotate(90deg)";
+				circle.style.transform = rotateSum;
+				rotateValue = rotateSum;
+			}
+
+		</script>
+	</div>
+</body>
+</html>
